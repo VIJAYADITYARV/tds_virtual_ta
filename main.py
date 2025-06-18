@@ -62,5 +62,5 @@ async def get_answer(q: Question):
                 }
     return {
         "answer": "Sorry, I could not find a relevant answer.",
-        "url": ""
+        "url": "https://discourse.s-anand.net"
     }
