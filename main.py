@@ -34,6 +34,10 @@ qa_data = [
 
 class Question(BaseModel):
     question: str
+    
+@app.get("/")
+async def root():
+    return {"message": "Virtual TA is live!"}
 
 @app.post("/")
 async def get_answer(q: Question):
