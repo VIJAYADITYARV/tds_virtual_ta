@@ -58,9 +58,10 @@ async def get_answer(q: Question):
             if qa['question'] == match[0]:
                 return {
                     "answer": qa['answer'],
-                    "url": qa['url']
+                    "links": [qa['url']]
                 }
     return {
-        "answer": "Sorry, I could not find a relevant answer.",
-        "url": "https://discourse.s-anand.net"
-    }
+    "answer": "Sorry, I could not find a relevant answer.",
+    "links": ["https://discourse.s-anand.net"]
+}
+
